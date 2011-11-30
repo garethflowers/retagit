@@ -1,40 +1,42 @@
 package garethflowers.retagit;
 
 import java.io.File;
-import java.io.UnsupportedEncodingException;
-import java.net.URLDecoder;
 
 /**
- *
- * @author Gareth Flowers
+ * Application Directory
+ * 
+ * @author Gareth Flowers <gareth@garethflowers.com>
  */
 public class ApplicationDirectory {
 
-    private static String path = null;
+	private static String path = null;
 
-    private ApplicationDirectory() {
-    }
+	private ApplicationDirectory() {
+	}
 
-    public static String getPath() {
-        if (ApplicationDirectory.path == null) {
-            String temppath;
-            try {
-                temppath = URLDecoder.decode(ApplicationDirectory.class.getProtectionDomain().getCodeSource().getLocation().getPath(), "UTF-8");
+	public static String getPath() {
+		if (ApplicationDirectory.path == null) {
+			String temppath;
+			try {
+				temppath = java.net.URLDecoder.decode(
+						ApplicationDirectory.class.getProtectionDomain()
+								.getCodeSource().getLocation().getPath(),
+						"UTF-8");
 
-                String osName = System.getProperty("os.name");
+				String osName = System.getProperty("os.name");
 
-                if (osName.toLowerCase().contains("windows")) {
-                    temppath = temppath.substring(1);
-                }
+				if (osName.toUpperCase().contains("WINDOWS")) {
+					temppath = temppath.substring(1);
+				}
 
-                temppath = new File(temppath).getParent();
-            } catch (UnsupportedEncodingException ex) {
-                temppath = System.getProperty("user.dir");
-            }
+				temppath = new File(temppath).getParent();
+			} catch (java.io.UnsupportedEncodingException ex) {
+				temppath = System.getProperty("user.dir");
+			}
 
-            ApplicationDirectory.path = temppath;
-        }
+			ApplicationDirectory.path = temppath;
+		}
 
-        return ApplicationDirectory.path;
-    }
+		return ApplicationDirectory.path;
+	}
 }
