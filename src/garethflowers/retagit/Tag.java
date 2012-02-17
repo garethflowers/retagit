@@ -51,8 +51,7 @@ public class Tag {
     }
 
     /**
-     * @param MediaType
-     *            the MediaType to set
+     * @param MediaType the MediaType to set
      */
     public void setMediaType(int MediaType) {
         this.MediaType = MediaType;
@@ -66,8 +65,7 @@ public class Tag {
     }
 
     /**
-     * @param Artist
-     *            the Artist to set
+     * @param Artist the Artist to set
      */
     public void setArtist(String Artist) {
         this.Artist = Artist;
@@ -81,8 +79,7 @@ public class Tag {
     }
 
     /**
-     * @param Advisory
-     *            the Advisory to set
+     * @param Advisory the Advisory to set
      */
     public void setAdvisory(int Advisory) {
         this.Advisory = Advisory;
@@ -96,16 +93,14 @@ public class Tag {
     }
 
     /**
-     * @param Album
-     *            the Album to set
+     * @param Album the Album to set
      */
     public void setAlbum(String Album) {
         this.Album = Album;
     }
 
     /**
-     * @param EncodedBy
-     *            the EncodedBy to set
+     * @param EncodedBy the EncodedBy to set
      */
     public void setEncodedBy(String EncodedBy) {
         this.EncodedBy = EncodedBy;
@@ -126,8 +121,7 @@ public class Tag {
     }
 
     /**
-     * @param ReleaseDate
-     *            the ReleaseDate to set
+     * @param ReleaseDate the ReleaseDate to set
      */
     public void setReleaseDate(int ReleaseDate) {
         this.ReleaseDate = ReleaseDate;
@@ -141,8 +135,7 @@ public class Tag {
     }
 
     /**
-     * @param AlbumArtist
-     *            the album artist to set
+     * @param AlbumArtist the album artist to set
      */
     public void setAlbumArtist(String AlbumArtist) {
         this.AlbumArtist = AlbumArtist;
@@ -156,8 +149,7 @@ public class Tag {
     }
 
     /**
-     * @param Rating
-     *            the Rating to set
+     * @param Rating the Rating to set
      */
     public void setRating(int Rating) {
         this.Rating = Rating;
@@ -171,8 +163,7 @@ public class Tag {
     }
 
     /**
-     * @param Grouping
-     *            the Grouping to set
+     * @param Grouping the Grouping to set
      */
     public void setGrouping(String Grouping) {
         this.Grouping = Grouping;
@@ -186,8 +177,7 @@ public class Tag {
     }
 
     /**
-     * @param Composer
-     *            the Composer to set
+     * @param Composer the Composer to set
      */
     public void setComposer(String Composer) {
         this.Composer = Composer;
@@ -201,8 +191,7 @@ public class Tag {
     }
 
     /**
-     * @param BPM
-     *            the BPM to set
+     * @param BPM the BPM to set
      */
     public void setBPM(int BPM) {
         this.BPM = BPM;
@@ -216,8 +205,7 @@ public class Tag {
     }
 
     /**
-     * @param Track
-     *            the Track to set
+     * @param Track the Track to set
      */
     public void setTrack(int Track) {
         this.Track = Track;
@@ -231,8 +219,7 @@ public class Tag {
     }
 
     /**
-     * @param TrackTotal
-     *            the TrackTotal to set
+     * @param TrackTotal the TrackTotal to set
      */
     public void setTrackTotal(int TrackTotal) {
         this.TrackTotal = TrackTotal;
@@ -262,8 +249,7 @@ public class Tag {
     }
 
     /**
-     * @param Disc
-     *            the Disc to set
+     * @param Disc the Disc to set
      */
     public void setDisc(int Disc) {
         this.Disc = Disc;
@@ -277,8 +263,7 @@ public class Tag {
     }
 
     /**
-     * @param DiscTotal
-     *            the DiscTotal to set
+     * @param DiscTotal the DiscTotal to set
      */
     public void setDiscTotal(int DiscTotal) {
         this.DiscTotal = DiscTotal;
@@ -308,8 +293,7 @@ public class Tag {
     }
 
     /**
-     * @param Genre
-     *            the Genre to set
+     * @param Genre the Genre to set
      */
     public void setGenre(String Genre) {
         this.Genre = Genre;
@@ -323,8 +307,7 @@ public class Tag {
     }
 
     /**
-     * @param Comments
-     *            the Comments to set
+     * @param Comments the Comments to set
      */
     public void setComments(String Comments) {
         this.Comments = Comments;
@@ -345,8 +328,7 @@ public class Tag {
     }
 
     /**
-     * @param Name
-     *            the Name to set
+     * @param Name the Name to set
      */
     public void setName(String Name) {
         this.Name = Name;
@@ -360,8 +342,7 @@ public class Tag {
     }
 
     /**
-     * @param Copyright
-     *            the Copyright to set
+     * @param Copyright the Copyright to set
      */
     public void setCopyright(String Copyright) {
         this.Copyright = Copyright;
@@ -375,8 +356,7 @@ public class Tag {
     }
 
     /**
-     * @param TvShowName
-     *            the TvShowName to set
+     * @param TvShowName the TvShowName to set
      */
     public void setTvShowName(String TvShowName) {
         this.TvShowName = TvShowName;
@@ -390,8 +370,7 @@ public class Tag {
     }
 
     /**
-     * @param TvEpisode
-     *            the TvEpisode to set
+     * @param TvEpisode the TvEpisode to set
      */
     public void setTvEpisode(String TvEpisode) {
         this.TvEpisode = TvEpisode;
@@ -405,8 +384,7 @@ public class Tag {
     }
 
     /**
-     * @param TvSeasonNum
-     *            the TvSeasonNum to set
+     * @param TvSeasonNum the TvSeasonNum to set
      */
     public void setTvSeasonNum(int TvSeasonNum) {
         this.TvSeasonNum = TvSeasonNum;
@@ -420,8 +398,7 @@ public class Tag {
     }
 
     /**
-     * @param TvEpisodeNum
-     *            the TvEpisodeNum to set
+     * @param TvEpisodeNum the TvEpisodeNum to set
      */
     public void setTvEpisodeNum(int TvEpisodeNum) {
         this.TvEpisodeNum = TvEpisodeNum;
@@ -435,8 +412,7 @@ public class Tag {
     }
 
     /**
-     * @param Description
-     *            the Description to set
+     * @param Description the Description to set
      */
     public void setDescription(String Description) {
         this.Description = Description;
@@ -450,8 +426,7 @@ public class Tag {
     }
 
     /**
-     * @param HD
-     *            the HD to set
+     * @param HD the HD to set
      */
     public void setIsHD(boolean HD) {
         this.HD = HD;
@@ -465,8 +440,7 @@ public class Tag {
     }
 
     /**
-     * @param Compilation
-     *            the Compilation to set
+     * @param Compilation the Compilation to set
      */
     public void setIsCompilation(boolean Compilation) {
         this.Compilation = Compilation;
@@ -480,8 +454,7 @@ public class Tag {
     }
 
     /**
-     * @param Gapless
-     *            the Gapless to set
+     * @param Gapless the Gapless to set
      */
     public void setIsGapless(boolean Gapless) {
         this.Gapless = Gapless;
@@ -495,8 +468,7 @@ public class Tag {
     }
 
     /**
-     * @param Podcast
-     *            the podcast to set
+     * @param Podcast the podcast to set
      */
     public void setIsPodcast(boolean Podcast) {
         this.Podcast = Podcast;
@@ -510,8 +482,7 @@ public class Tag {
     }
 
     /**
-     * @param CnID
-     *            the CnID to set
+     * @param CnID the CnID to set
      */
     public void setCnID(int CnID) {
         this.CnID = CnID;
@@ -525,8 +496,7 @@ public class Tag {
     }
 
     /**
-     * @param ApID
-     *            the ApID to set
+     * @param ApID the ApID to set
      */
     public void setApID(String ApID) {
         this.ApID = ApID;
