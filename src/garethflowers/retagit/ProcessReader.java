@@ -13,36 +13,36 @@ import java.util.Collection;
  */
 public class ProcessReader extends Thread {
 
-	private InputStream is;
-	private Collection<String> result;
+    private InputStream is;
+    private Collection<String> result;
 
-	public ProcessReader(InputStream is) {
-		this.is = is;
-		this.result = new ArrayList<String>();
-	}
+    public ProcessReader(InputStream is) {
+        this.is = is;
+        this.result = new ArrayList<String>();
+    }
 
-	@Override
-	public void run() {
-		InputStreamReader isr = new InputStreamReader(is);
-		BufferedReader br = new BufferedReader(isr);
+    @Override
+    public void run() {
+        InputStreamReader isr = new InputStreamReader(is);
+        BufferedReader br = new BufferedReader(isr);
 
-		String line = null;
+        String line = null;
 
-		try {
-			while ((line = br.readLine()) != null) {
-				result.add(line);
-			}
-		} catch (Exception ex) {
-			System.out.println(ex.getStackTrace());
-		}
-	}
+        try {
+            while ((line = br.readLine()) != null) {
+                result.add(line);
+            }
+        } catch (Exception ex) {
+            System.out.println(ex.getStackTrace());
+        }
+    }
 
-	public String[] GetResult() {
-		try {
-			return result.toArray(new String[0]);
-		} catch (Exception ex) {
-			System.out.println(ex.getStackTrace());
-			return new String[0];
-		}
-	}
+    public String[] GetResult() {
+        try {
+            return result.toArray(new String[0]);
+        } catch (Exception ex) {
+            System.out.println(ex.getStackTrace());
+            return new String[0];
+        }
+    }
 }

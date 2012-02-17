@@ -9,34 +9,33 @@ import java.io.File;
  */
 public class ApplicationDirectory {
 
-	private static String path = null;
+    private static String path = null;
 
-	private ApplicationDirectory() {
-	}
+    private ApplicationDirectory() {
+    }
 
-	public static String getPath() {
-		if (ApplicationDirectory.path == null) {
-			String temppath;
-			try {
-				temppath = java.net.URLDecoder.decode(
-						ApplicationDirectory.class.getProtectionDomain()
-								.getCodeSource().getLocation().getPath(),
-						"UTF-8");
+    public static String getPath() {
+        if (ApplicationDirectory.path == null) {
+            String temppath = ApplicationDirectory.class.getProtectionDomain()
+                    .getCodeSource().getLocation().getPath();
 
-				String osName = System.getProperty("os.name");
+            try {
+                temppath = java.net.URLDecoder.decode(temppath, "UTF-8");
 
-				if (osName.toUpperCase().contains("WINDOWS")) {
-					temppath = temppath.substring(1);
-				}
+                String osName = System.getProperty("os.name");
 
-				temppath = new File(temppath).getParent();
-			} catch (java.io.UnsupportedEncodingException ex) {
-				temppath = System.getProperty("user.dir");
-			}
+                if (osName.toUpperCase().contains("WINDOWS")) {
+                    temppath = temppath.substring(1);
+                }
 
-			ApplicationDirectory.path = temppath;
-		}
+                temppath = new File(temppath).getParent();
+            } catch (java.io.UnsupportedEncodingException ex) {
+                temppath = System.getProperty("user.dir");
+            }
 
-		return ApplicationDirectory.path;
-	}
+            ApplicationDirectory.path = temppath;
+        }
+
+        return ApplicationDirectory.path;
+    }
 }
