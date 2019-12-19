@@ -2,8 +2,6 @@ package garethflowers.retagit;
 
 /**
  * Settings
- * 
- * @author Gareth Flowers <gareth@garethflowers.com>
  */
 public class Settings {
 

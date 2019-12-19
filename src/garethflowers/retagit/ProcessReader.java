@@ -8,8 +8,6 @@ import java.util.Collection;
 
 /**
  * ProcessReader
- * 
- * @author Gareth Flowers <gareth@garethflowers.com>
  */
 public class ProcessReader extends Thread {
 

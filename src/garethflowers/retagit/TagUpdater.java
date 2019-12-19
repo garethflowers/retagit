@@ -6,8 +6,6 @@ import javax.swing.JOptionPane;
 
 /**
  * TagUpdater
- * 
- * @author Gareth Flowers <gareth@garethflowers.com>
  */
 public class TagUpdater extends Thread {
 

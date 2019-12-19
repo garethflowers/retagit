@@ -2,8 +2,6 @@ package garethflowers.retagit;
 
 /**
  * Process Executer
- * 
- * @author Gareth Flowers <gareth@garethflowers.com>
  */
 public class ProcessExecuter {
 

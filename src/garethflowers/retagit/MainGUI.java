@@ -7,8 +7,6 @@ import javax.swing.JFileChooser;
 
 /**
  * Main GUI
- * 
- * @author Gareth Flowers <gareth@garethflowers.com>
  */
 public final class MainGUI extends javax.swing.JFrame {
 

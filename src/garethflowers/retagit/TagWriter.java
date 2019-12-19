@@ -2,8 +2,6 @@ package garethflowers.retagit;
 
 /**
  * TagWriter
- * 
- * @author Gareth Flowers <gareth@garethflowers.com>
  */
 public class TagWriter {
 

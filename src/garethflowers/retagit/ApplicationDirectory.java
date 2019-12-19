@@ -4,8 +4,6 @@ import java.io.File;
 
 /**
  * Application Directory
- * 
- * @author Gareth Flowers <gareth@garethflowers.com>
  */
 public class ApplicationDirectory {
 

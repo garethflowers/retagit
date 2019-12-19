@@ -2,8 +2,6 @@ package garethflowers.retagit;
 
 /**
  * TagReader
- * 
- * @author Gareth Flowers <gareth@garethflowers.com>
  */
 public class TagReader {
 
